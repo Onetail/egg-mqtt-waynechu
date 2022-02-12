@@ -1,6 +1,6 @@
 {
   "name": "egg-mqtt-waynechu",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "egg.js both js and ts can using mqtt ",
   "eggPlugin": {
     "name": "mqtt"
