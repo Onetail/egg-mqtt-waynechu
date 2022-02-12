@@ -51,12 +51,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-mqtt-waynechu.git"
+    "url": "git+https://github.com/Onetail/egg-mqtt-waynechu.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/Onetail/egg-mqtt-waynechu/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-mqtt-waynechu#readme",
+  "homepage": "https://github.com/Onetail/egg-mqtt-waynechu/blob/master/README.md",
   "author": "WayneChu",
   "license": "MIT"
 }
