@@ -48,7 +48,7 @@ exports.mqtt = {
   client: {
     host: 'host',
     port: 'port',
-    user: 'user',
+    username: 'user',
     password: 'password',
     clientId: '',
     connectTimeout: 30 * 1000,
