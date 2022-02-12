@@ -44,7 +44,18 @@ exports.mqtt = {
 
 ```js
 // {app_root}/config/config.default.js
-exports.mqtt = {};
+exports.mqtt = {
+  client: {
+    host: 'host',
+    port: 'port',
+    user: 'user',
+    password: 'password',
+    clientId: '',
+    connectTimeout: 30 * 1000,
+    keepalive: 5,
+    clean: false,
+  },
+};
 ```
 
 see [config/config.default.js](config/config.default.js) for more detail.
