@@ -6,19 +6,47 @@
  * @property {String} SOME_KEY - some description
  */
 exports.mqtt = {
-  host: 'mqtt://127.0.0.1',
-  port: 1883,
-  username: 'username',
-  password: 'password',
-  clientId: 'default',
-  options: {
-    keeplive: 60,
-    protocolId: 'MQTT',
-    protocol: 'MQTT',
-    protocolVersion: 5,
-    clean: true,
-    rejectUnauthorized: false,
-    reconnectPeriod: 1000,
-    connectTimeout: 30000,
+  default: {
+    connectTimeout: 30 * 1000,
+    keepalive: 5,
+    clean: false,
   },
+  app: true,
+  agent: false,
+
+  // Single Database
+  // client: {
+  //   host: 'host',
+  //   port: 'port',
+  //   user: 'user',
+  //   password: 'password',
+  //   clientId: '',
+  //   connectTimeout: 30 * 1000,
+  //   keepalive: 5,
+  //   clean: false,
+  // },
+
+  // Multi Databases
+  // clients: {
+  //   mqtt1: {
+  //   host: 'host',
+  //   port: 'port',
+  //   user: 'user',
+  //   password: 'password',
+  //   clientId: '',
+  //   connectTimeout: 30 * 1000,
+  //   keepalive: 5,
+  //   clean: false,
+  //   },
+  //   mqtt2: {
+  //   host: 'host',
+  //   port: 'port',
+  //   user: 'user',
+  //   password: 'password',
+  //   clientId: '',
+  //   connectTimeout: 30 * 1000,
+  //   keepalive: 5,
+  //   clean: false,
+  //   },
+  // },
 };
