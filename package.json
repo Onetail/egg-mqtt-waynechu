@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "egg.js both js and ts can using mqtt ",
   "eggPlugin": {
-    "name": "mqttWaynechu"
+    "name": "mqtt"
   },
   "keywords": [
     "egg",
@@ -39,12 +39,11 @@
     "autod": "autod"
   },
   "files": [
-    "app.js",
-    "agent.js",
     "config",
+    "agent.js",
     "lib",
-    "index.d.ts",
-    "app"
+    "app.js",
+    "index.d.ts"
   ],
   "types": "./index.d.ts",
   "ci": {
