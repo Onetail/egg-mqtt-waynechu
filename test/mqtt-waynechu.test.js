@@ -15,9 +15,7 @@ describe('test/mqtt-waynechu.test.js', () => {
   afterEach(mock.restore);
 
   it('should GET /', () => {
-    return app.httpRequest()
-      .get('/')
-      .expect('hi, mqttWaynechu')
+    return app.httpRequest().get('/').expect('hi, mqtt')
       .expect(200);
   });
 });
