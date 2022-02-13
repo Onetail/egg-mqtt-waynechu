@@ -6,10 +6,13 @@ interface EggMqttOptions {
   agent?: boolean;
   client?: IClientOptions;
 }
-
 declare module 'egg' {
+  interface IMqtt extends MqttClient {}
   interface Application {
-    mqtt: MqttClient & Singleton<MqttClient>;
+    mqtt: IMqtt;
+  }
+  interface Context {
+    mqtt: IMqtt;
   }
 
   interface EggAppConfig {
